@@ -1,0 +1,12 @@
+{
+  "singleQuote": true,
+  "trailingComma": "all",
+  "overrides": [
+    {
+      "files": "*.+(js|jsx|ts|tsx|json|yml|yaml|css|scss|md|markdown|html|vue|svelte)",
+      "options": {
+        "endOfLine": "crlf"
+      }
+    }
+  ]
+}
