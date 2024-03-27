@@ -2,9 +2,7 @@ import {spawn} from 'child_process';
 const iconv = require("iconv-lite");
 
 export class ProcessUtils {
-  public static exec(command: string): Promise<string> {
-
-    const commands = ['cd', 'D:\\temp_deploy', '&&', command];
+  public static exec(commands: string[]): Promise<string> {
 
     return new Promise((resolve, reject)=> {
       const bat = spawn(commands[0], commands.slice(1));

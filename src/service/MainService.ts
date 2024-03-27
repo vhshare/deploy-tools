@@ -6,7 +6,7 @@ import { ProcessUtils } from "../utils/ProcessUtils";
 @Injectable()
 export class MainService{
   public start(key: Key): Promise<string> {
-    const path = getKeyPath(key);
-    return ProcessUtils.exec(path);
+    const commands = getKeyPath(key);
+    return ProcessUtils.exec(commands);
   }
 }
