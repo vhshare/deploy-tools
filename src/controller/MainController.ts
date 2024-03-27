@@ -9,9 +9,14 @@ export class MainController {
   }
 
   @Get('/start')
-public async start(@Query('key') key: Key): Promise<string> {
+  public start(@Query('key') key: Key): string {
     this.mainValidation.start(key);
     return this.mainService.start(key);
+  }
+
+  @Get('/log')
+  public log(@Query('taskId') taskId: string): string{
+    return this.mainService.log(taskId);
   }
 
 }

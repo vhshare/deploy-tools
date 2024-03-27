@@ -9,5 +9,39 @@ function genKeyPathMapping(){
   }
 }
 
+function genCache(){
+  const map = new Map<string, string>();
+  const timeout = new Map<string, any>();
+  return {
+    set(key: string, data: string){
+      map.set(key, data);
+      this.refresh(key);
+    },
+    delete(key: string){
+      map.delete(key);
+      const index = timeout.get(key);
+      if (index) {
+        clearTimeout(index);
+        timeout.delete(key);
+      }
+    },
+    refresh(key: string){
+      const index = timeout.get(key);
+      if (index) {
+        clearTimeout(index);
+      }
+      const newIndex = setTimeout(() => {
+        this.delete(key);
+      }, 5 * 60 * 1000);
+      timeout.set(key, newIndex);
+    },
+    get(key: string){
+      this.refresh(key);
+      return map.get(key);
+    }
+  }
+}
 
 export const getKeyPath = genKeyPathMapping();
+
+export const cache = genCache();
