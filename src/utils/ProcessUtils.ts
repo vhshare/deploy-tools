@@ -3,8 +3,11 @@ const iconv = require("iconv-lite");
 
 export class ProcessUtils {
   public static exec(command: string): Promise<string> {
+
+    const commands = ['cd', 'D:\\temp_deploy', '&&', command];
+
     return new Promise((resolve, reject)=> {
-      const bat = spawn(command);
+      const bat = spawn(commands[0], commands.slice(1));
       const output: string[] = [];
       const error: string[] = [];
       // 监听子进程的输出
