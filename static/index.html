@@ -18,14 +18,14 @@
   startDom.addEventListener('click', async () => {
     clearInterval(index);
     const key = keyDom.value;
-    const response = await fetch(`../start?key=${key}`);
+    const response = await fetch(`./start?key=${key}`);
     const taskId = await response.text();
     if (taskId.startsWith('{')){
       logDom.innerText = '部署失败';
       return;
     }
     index = setInterval(async () => {
-      const response = await fetch(`../log?taskId=${taskId}`);
+      const response = await fetch(`./log?taskId=${taskId}`);
       logDom.innerText = await response.text();
     }, 1000);
   });
