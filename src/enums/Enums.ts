@@ -39,7 +39,7 @@ export enum Key {
   esWEB24 = '6taCVPH7hiVLHjKv',
   esWEB25 = 'loTDiuwLSlIeJZFE',
   esAPI24 = 'JXe6QcC3AbZ6QZpN',
-  esAPI25 = 'JXe6QcC3AbZ6QZpN',
+  esAPI25 = 'ng8o0moBWlRIYPM8',
   esWEB26 = 'Hvu4B9HKsTBSdze5',
   esAPI26 = 'wCKY5FAEKeHJUXo7',
   esWEB27 = 'CNeacUkvSqiWOVZs',
