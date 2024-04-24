@@ -30,6 +30,10 @@ export enum Key {
   // eServices
   esWEB11 = 'b7juBorNBdjvLGqz',
   esAPI11 = 'eJeHV96rBmwmWMXJ',
+
+  esWEB15 = 'p37CP5Dh7gyK0yGW',
+  esAPI15 = 'HrHHJMcK93WkZE0A',
+
   esWEB16 = 'VuWKxzgCIt4usg9B',
   esAPI16 = 'EvEFqbQVNZycFNiX',
   esWEB17 = '6rzD3qGk4JQiygcY',
