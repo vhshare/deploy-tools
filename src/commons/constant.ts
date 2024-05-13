@@ -34,6 +34,9 @@ function genKeyPathMapping(){
   keyPathMapping.set(Key.esWEB11, ['cmd.exe',  '/c', 'E: && cd E:\\temp_deploy && es-web11.bat']);
   keyPathMapping.set(Key.esAPI11, ['cmd.exe',  '/c', 'E: && cd E:\\temp_deploy && es-api11.bat']);
 
+  keyPathMapping.set(Key.esWEB12, ['cmd.exe',  '/c', 'E: && cd E:\\temp_deploy && es-web12.bat']);
+  keyPathMapping.set(Key.esAPI12, ['cmd.exe',  '/c', 'E: && cd E:\\temp_deploy && es-api12.bat']);
+
   keyPathMapping.set(Key.esWEB15, ['cmd.exe',  '/c', 'C: && cd C:\\Users\\Public && es-web15.bat']);
   keyPathMapping.set(Key.esAPI15, ['cmd.exe',  '/c', 'C: && cd C:\\Users\\Public && es-api15.bat']);
 

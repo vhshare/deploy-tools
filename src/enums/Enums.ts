@@ -31,6 +31,9 @@ export enum Key {
   esWEB11 = 'b7juBorNBdjvLGqz',
   esAPI11 = 'eJeHV96rBmwmWMXJ',
 
+  esWEB12 = 'gN71rqz8TXG80IEa',
+  esAPI12 = 'MYzGmbv3qj7UHYrQ',
+
   esWEB15 = 'p37CP5Dh7gyK0yGW',
   esAPI15 = 'HrHHJMcK93WkZE0A',
 
