@@ -65,6 +65,8 @@ export enum Key {
   esAPI30 = '7VyS2f3i9F29peJR',
   esWEB31 = 'LUH2msiquy8ExXxo',
   esAPI31 = 'QR2FUwnh92sMXSUi',
+  esWEB32 = 'VslANCihVJuDZZLz',
+  esAPI32 = 'qCHfDZwaWmbuCobm',
   esWEB40 = '8BL9R755TwicQKuk',
   esAPI40 = 'TCSUJiUfTDwWU4B2',
   esWEB41 = 'xsPjGhR8FVcMc7yK',
